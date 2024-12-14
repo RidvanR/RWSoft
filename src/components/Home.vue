@@ -178,19 +178,11 @@ export default {
   right: 20px;
   width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(var(--v-theme-primary));
-  color: white;
-  border: none;
-  border-radius: 20%;
-  cursor: pointer;
-  font-size: 18px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #8fe351;
+  border-radius: 50%;
+  opacity: 0;
   visibility: hidden;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .scroll-to-top:hover {
