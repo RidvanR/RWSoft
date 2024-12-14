@@ -188,7 +188,7 @@ export default {
   cursor: pointer;
   font-size: 18px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: none;
+  visibility: hidden;
   z-index: 1000;
   transition: opacity 0.3s ease;
 }
