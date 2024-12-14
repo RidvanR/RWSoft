@@ -12,13 +12,15 @@
         Wir entwickeln moderne, kreative und skalierbare Weblösungen, die Ihre Vision in die digitale Realität bringen.
       </p>
       
-      <button @click="scrollToServices" class="hero-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
+      <button @click="scrollToServices" class="theme-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
           Mehr erfahren
       </button>
       
     </div>
   </section>
-  <!-- Services -->
+  <!-- 
+   Services ------------------------------------
+  -->
   <section id="services" class="services">
   <h2 class="section-title">Unsere Leistungen</h2>
   <div class="service-container">
@@ -38,7 +40,7 @@
     <p>Entwicklung leistungsstarker Onlineshops, die Ihre Umsätze nachhaltig steigern.</p>
   </div>
   <div class="service-card">
-    <i class="fas fa-chart-line"></i>
+    <i class="fas fa-search"></i>
     <h3>SEO-Optimierung</h3>
     <p>Verbessern Sie Ihre Sichtbarkeit in Suchmaschinen und erreichen Sie mehr Kunden.</p>
   </div>
@@ -48,14 +50,94 @@
     <p>Skalierbare Hosting-Lösungen für Ihre Inhalte mit höchster Verfügbarkeit.</p>
   </div>
   <div class="service-card">
-    <i class="fas fa-lightbulb"></i>
-    <h3>Strategie-Beratung</h3>
-    <p>Individuelle Strategien, um Ihr digitales Wachstum zu maximieren.</p>
+    <i class="fas fa-chart-line"></i>
+    <h3>Digitales Marketing</h3>
+    <p>Gezielte Online-Marketingstrategien, die Ihre Marke bekannter machen und Ihre Zielgruppe erreichen.</p>
   </div>
 </div>
-
+<div class="cta-section">
+  <p><b>Bereit, mit uns durchzustarten? Finden Sie heraus, was unsere Dienstleistungen kosten!</b></p>
+  <button style="margin-top: 30px;" class="theme-button" @click="scrollToPrices" variant="outlined rounded-lg v-ripple flat">
+          Was kostet es?
+      </button>
+</div>
 </section>
-<!-- Über Uns -->
+
+<!--
+-----------Preise
+-->
+<section id="prices" class="pricing-section">
+  <h2 class="section-title">Unsere Pakete</h2>
+  <p class="pricing-description">
+    Wählen Sie das passende Paket für Ihr Unternehmen. Egal, ob Sie gerade erst anfangen oder nach einer umfassenden digitalen Transformation suchen – wir haben die Lösung, die zu Ihnen passt.
+  </p>
+  <div class="highlight-box">
+  <p>
+    <i class="fas fa-exclamation-circle"></i>
+    <strong>Hinweis:</strong> Da wir als Kleinunternehmen eine begrenzte Anzahl an Projekten umsetzen können, empfehlen wir Ihnen, frühzeitig Kontakt aufzunehmen, um sich Ihren Platz zu sichern.
+  </p>
+</div>
+
+  <div class="pricing-container">
+    <!-- Starter Paket -->
+    <div class="pricing-card">
+      <h3 class="pricing-title">Starter</h3>
+      <p class="pricing-price">15€ <span class="small-text">/Monat</span></p>
+      <p class="pricing-subtext"> €620/einmalig</p>
+      <ul class="pricing-features">
+        <li><i class="fas fa-check"></i>Moderne Webentwicklung</li>
+        <li><i class="fas fa-check"></i>Grundlegendes UI/UX-Design</li>
+        <li><i class="fas fa-check"></i>Basis SEO-Optimierung</li>
+      </ul>
+      <p class="pricing-extra-info">
+        * Monatliche Kosten entstehen durch Webhosting und Domain. 
+      </p>
+      <button class="pricing-button">Jetzt starten</button>
+    </div>
+
+    <!-- Professional Paket -->
+    <div class="pricing-card highlighted">
+      <h3 class="pricing-title">Professional</h3>
+      <p class="pricing-price">€25 <span class="small-text">/Monat</span></p>
+      <p class="pricing-subtext">€699€/einmalig</p>
+      <ul class="pricing-features">
+        <li><i class="fas fa-check"></i>Komplette Webentwicklung</li>
+        <li><i class="fas fa-check"></i>Benutzerzentriertes UI/UX-Design</li>
+        <li><i class="fas fa-check"></i>Erweiterte SEO-Optimierung</li>
+        <li><i class="fas fa-check"></i>E-Commerce-Integration</li>
+      </ul>
+      <p class="pricing-extra-info">
+        * Monatliche Kosten entstehen durch Webhosting, Pflege und Domain.
+      </p>
+      <button class="pricing-button highlighted">Meistgewählt</button>
+    </div>
+
+    <!-- Enterprise Paket -->
+    <div class="pricing-card">
+      <h3 class="pricing-title">Enterprise</h3>
+      <p class="pricing-price">€100 <span class="small-text">/Monat</span></p>
+        <p class="pricing-subtext">
+        Für nur <b>€1500</b>/einmalig!
+      </p>
+      <ul class="pricing-features">
+        <li><i class="fas fa-check"></i>Individuelle Webentwicklung</li>
+        <li><i class="fas fa-check"></i>Premium UI/UX-Design</li>
+        <li><i class="fas fa-check"></i>Komplette SEO-Strategie</li>
+        <li><i class="fas fa-check"></i>Hosting & Support</li>
+        <li><i class="fas fa-check"></i>Social Media Management</li>
+        <li><i class="fas fa-check"></i>Google & Facebook Ads</li>
+      </ul>
+      <p class="pricing-extra-info">
+        * Monatliche Kosten decken Webhosting, Content-Aktualisierung, Google o. Facebook Ads und SEO-Optimierung ab.
+      </p>
+      <button class="pricing-button">Kontakt aufnehmen</button>
+    </div>
+  </div>
+</section>
+
+<!--
+---------------------Über Uns 
+ -->
 <v-container class="about-section" fluid>
     <!-- Titel -->
     <v-row justify="center" class="mb-8">
@@ -106,29 +188,32 @@
       </v-col>
     </v-row>
   </v-container>
-<!-- Portfilioo-->
-<v-container class="project-container" fluid>
+<!-- 
+  Portfolio
+
+  
+<v-container class="portfolio" fluid>
   <v-row class="text-center">
     <v-col cols="12">
       <h2 class="section-title">Unsere Projekte</h2>
     </v-col>
   </v-row>
     <v-row class="project-container" justify="center" align="center" dense>
-      <!-- Karte 1 -->
+      
       <v-col cols="12" sm="6" md="4" lg="3">
         <v-card class="portfolio-item" elevation="5">
           <img src="../assets/vue.svg" alt="Projekt 1" class="portfolio-image" />
           <v-card-title class="portfolio-title">Projekt 1</v-card-title>
         </v-card>
       </v-col>
-      <!-- Karte 2 -->
+      
       <v-col cols="12" sm="6" md="4" lg="3">
         <v-card class="portfolio-item" elevation="5">
           <img src="../assets/vue.svg" alt="Projekt 2" class="portfolio-image" />
           <v-card-title class="portfolio-title">Projekt 2</v-card-title>
         </v-card>
       </v-col>
-      <!-- Karte 3 -->
+      
       <v-col cols="12" sm="6" md="4" lg="3">
         <v-card class="portfolio-item" elevation="5">
           <img src="../assets/vue.svg" alt="Projekt 3" class="portfolio-image" />
@@ -137,7 +222,7 @@
       </v-col>
     </v-row>
   </v-container>
-
+   --> 
 <button id="scrollToTopButton" class="scroll-to-top" @click="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
 
 <Footer></Footer>
@@ -162,12 +247,18 @@ export default {
         servicesSection.scrollIntoView({ behavior: "smooth" });
       }
     },
+    scrollToPrices() {
+      const priceSection = document.getElementById("prices");
+      if (priceSection) {
+        priceSection.scrollIntoView({behavior: "smooth"})
+      }
+    }
   },
 };
 </script>
 
 <style scoped>
-
+/* Themes */
 .comp-name {
   color: rgb(var(--v-theme-primary));
 }
@@ -178,7 +269,7 @@ export default {
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #8fe351;
+  background-color: rgb(var(--v-theme-accent));
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
@@ -193,6 +284,30 @@ export default {
   visibility: visible;
   opacity: 1;
 }
+
+.theme-button {
+  background-color: rgb(var(--v-theme-accent));
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-button:hover {
+  background: rgb(var(--v-theme-hover)); /* Umkehrung des Farbverlaufs */
+  transform: scale(1.05); /* Leichte Vergrößerung */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Tieferer Schatten */
+}
+
+.theme-button:active {
+  transform: scale(0.98); /* Leichter Klick-Effekt */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
 
 
 .hero {
@@ -239,30 +354,7 @@ export default {
   text-shadow: 1px 1px 2px #1E293B;
 }
 
-.hero-button {
-  margin-top: 30px;
-  background: transparent; /* Dynamischer Farbverlauf */
-  color: white;
-  border: 1px solid white;
-  padding: 15px 30px;
-  font-size: 1.0rem;
-  font-weight: bold;
-  border-radius: 30px; /* Abgerundete Ecken */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Sanfter Übergang */
-}
 
-.hero-button:hover {
-  background: #62bd22;; /* Umkehrung des Farbverlaufs */
-  transform: scale(1.05); /* Leichte Vergrößerung */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Tieferer Schatten */
-}
-
-.hero-button:active {
-  transform: scale(0.98); /* Leichter Klick-Effekt */
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
 
 /* Services */
 .services {
@@ -272,6 +364,9 @@ export default {
   color: var(--text);
   max-width: 1200px;
   margin: 0 auto; /* Zentriere die Sektion */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-container {
@@ -343,6 +438,182 @@ export default {
   }
 }
 
+/* --------------------- Preise -------------------------*/
+/* Allgemeine Sektion */
+.pricing-section {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: var(--v-background);
+  color: var(--text);
+}
+
+.highlight-box i {
+  color: #62bd22; /* Helles Grün für das Icon */
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.highlight-box {
+  border-left: 5px solid rgb(var(--v-theme-accent));/* Dunkle Blaue Linie */
+  padding: 15px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+
+
+/* Titel */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Beschreibung für die Preissektion */
+.pricing-description {
+  font-size: 1.2rem;
+  color: #E2E8F0; /* Helles Grau für Lesbarkeit */
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+.pricing-note {
+  font-size: 0.9rem;
+  color: #aaa; /* Dezentes Grau */
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Kleine Schrift neben dem Preis */
+.small-text {
+  font-size: 0.9rem;
+  color: #aaa; /* Dezentes Grau */
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+/* Subtext unter dem Preis */
+.pricing-subtext {
+  font-size: 1rem; /* Größer als der Standardtext */
+  color: #fff; /* Helles Grün für Auffälligkeit */
+  font-weight: 500;
+  margin-bottom: 20px; /* Abstand zur Liste */
+  text-align:center; /* Zentriert, da es eine wichtige Info ist */
+  list-style: none;
+}
+
+
+
+
+/* Container */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Karten */
+.pricing-card {
+  background-color: rgb(var(--v-theme-cards));
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-title {
+  font-size: 1.8rem;
+  color: rgb(var(--v-theme-primary));
+  margin-bottom: 20px;
+}
+
+.pricing-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pricing-features {
+  list-style: none; /* Entferne Standardpunkte */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Links ausrichten */
+  margin-bottom: 30px;
+}
+
+.pricing-features li {
+  display: flex; /* Flexbox für Icon und Text */
+  align-items: flex-start; /* Text bleibt oben, wenn er umbricht */
+  font-size: 1rem; /* Normale Schriftgröße */
+  color: #E2E8F0; /* Helles Grau für Liste */
+  margin-bottom: 10px; /* Gleichmäßiger Abstand zwischen Punkten */
+}
+
+.pricing-features i {
+  color: #62bd22; /* Helles Grün für Checkmark */
+  margin-right: 10px; /* Abstand zwischen Icon und Text */
+  font-size: 1.2rem; /* Größe des Icons */
+  flex-shrink: 0;
+}
+
+/* Button */
+.pricing-button {
+  background-color: rgb(var(--v-theme-accent));
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px
+}
+
+.pricing-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hervorgehobene Karte */
+.highlighted {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgb(var(--v-theme-accent));
+}
+
+.highlighted-text {
+  text-shadow: 0 8px 16px rgb(var(--v-theme-accent));;
+}
+
+.highlighted .pricing-price {
+  color: #fff;
+}
+
+.pricing-extra-info {
+  font-size: 0.9rem;
+  color: #E2E8F0;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.highlighted .pricing-button {
+  background-color: rgb(var(--v-theme-accent));
+  color: #fff
+}
+
+
 
 
 
@@ -351,7 +622,7 @@ export default {
 .about-section {
   background-color: var(--background);
   color: var(--text);
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .section-title {
@@ -434,6 +705,7 @@ export default {
 .portfolio {
   max-width: 1200px; /* Begrenze die Breite des Containers */
   margin: 0 auto;
+  padding: 40px 0px;
 }
 
 .project-container {

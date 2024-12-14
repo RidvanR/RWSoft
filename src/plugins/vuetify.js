@@ -14,11 +14,11 @@ export default createVuetify({
       dark: {
         colors: {
         primary: '#32ff7e', 
-        accent:'#FFD700',
+        accent:'#6C63FF',
         background: '#111821', /* BlauMarine */
         cards: '#1E293B', /* Kartenhintergrund */
         text: '#FFFFFF',
-        hover: '#78f1b5',
+        hover: '#8D85FF',
         },
       },
     },
