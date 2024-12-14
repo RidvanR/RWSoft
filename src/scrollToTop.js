@@ -1,25 +1,35 @@
 
 import smoothscroll from 'smoothscroll-polyfill';
 
-export function scrollToTop() {
+
+
+  export function scrollToTop() {
+    // Polyfill aktivieren
+    smoothscroll.polyfill();
+  
     const scrollToTopButton = document.getElementById('scrollToTopButton');
+  
+    if (!scrollToTopButton) {
+      console.error('Scroll-to-Top-Button nicht gefunden!');
+      return;
+    }
+  
+    // Scroll-Event
     window.addEventListener('scroll', () => {
+      console.log('Scroll Y:', window.scrollY);
+  
       if (window.scrollY > 200) {
         scrollToTopButton.classList.add('show');
       } else {
         scrollToTopButton.classList.remove('show');
       }
     });
-    
-
-   
   
-    // Scroll nach oben beim Klicken
+    // Button-Klick
     scrollToTopButton.addEventListener('click', () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
-    });    
-  
-};
+    });
+  }
