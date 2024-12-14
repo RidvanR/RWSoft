@@ -12,7 +12,7 @@
         alt="Logo"
         class="me-3 logo"
       />
-      <a href="/home" class="logo-name">rwsoftsdad™</a>
+      <a href="/home" class="logo-name">rwsoft™</a>
     </div>
 
     <!-- Desktop Navigation -->

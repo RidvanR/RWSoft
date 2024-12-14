@@ -339,15 +339,6 @@ export default {
   transform: translateY(0);
 }
 
-.service-card {
-  opacity: 0;
-  transition: opacity 0.5s ease 0.3s; /* Cards mit Verzögerung einblenden */
-}
-
-.service-container.visible .service-card {
-  opacity: 1;
-}
-
 @media (max-width: 1024px) { /* Tablet-Ansicht */
   .service-container {
     grid-template-columns: repeat(2, 1fr); /* 2 Karten pro Reihe */
