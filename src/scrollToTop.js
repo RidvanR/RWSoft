@@ -2,8 +2,6 @@
 
 export function scrollToTop() {
     const scrollToTopButton = document.getElementById('scrollToTopButton');
-  
-    // Button nur anzeigen, wenn der Benutzer scrollt
     window.addEventListener('scroll', () => {
       if (window.scrollY > 200) { // Zeige Button ab 200px Scrolltiefe
         scrollToTopButton.style.display = 'block';

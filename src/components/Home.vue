@@ -7,12 +7,12 @@
     <!-- Hauptinhalt -->
     <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Willkommen bei <span>rwsoft</span></h1>
+      <h1 class="hero-title">Willkommen bei <span>rwsoft™</span></h1>
       <p class="hero-subtitle">
         Wir entwickeln moderne, kreative und skalierbare Weblösungen, die Ihre Vision in die digitale Realität bringen.
       </p>
       
-      <button onclick="window.location.href='#services';" class="hero-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
+      <button @click="scrollToServices" class="hero-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
           Mehr erfahren
       </button>
       
@@ -138,7 +138,7 @@
     </v-row>
   </v-container>
 
-<button id="scrollToTopButton" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<button id="scrollToTopButton" class="scroll-to-top" @click="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
 
 <Footer></Footer>
 </template>
@@ -151,6 +151,17 @@ export default {
   components: {
     Header,
     Footer,
+  },
+  data() {
+    return {showScrollButton: false, };
+  },
+  methods: {
+    scrollToServices() {
+      const servicesSection = document.getElementById("services");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>
