@@ -328,17 +328,6 @@ export default {
   
 }
 
-.service-container {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.service-container.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (max-width: 1024px) { /* Tablet-Ansicht */
   .service-container {
     grid-template-columns: repeat(2, 1fr); /* 2 Karten pro Reihe */

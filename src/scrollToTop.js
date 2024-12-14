@@ -24,21 +24,6 @@ export function scrollToTop() {
         top: 0,
         behavior: 'smooth'
       });
-    });
-
-   
-      const serviceContainer = document.querySelector(".service-container");
-    
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible"); // Klasse für die Animation hinzufügen
-            observer.unobserve(entry.target); // Beobachtung beenden
-          }
-        });
-      });
-    
-      observer.observe(serviceContainer);
-    
+    });    
   
 };
