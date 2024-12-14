@@ -328,13 +328,23 @@ export default {
   
 }
 
-.service-card {
+.service-container {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.service-card.visible {
+.service-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card {
+  opacity: 0;
+  transition: opacity 0.5s ease 0.3s; /* Cards mit Verzögerung einblenden */
+}
+
+.service-container.visible .service-card {
   opacity: 1;
 }
 

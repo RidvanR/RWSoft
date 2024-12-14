@@ -26,16 +26,19 @@ export function scrollToTop() {
       });
     });
 
-    const cards = document.querySelectorAll('.service-card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+   
+      const serviceContainer = document.querySelector(".service-container");
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // Klasse für die Animation hinzufügen
+            observer.unobserve(entry.target); // Beobachtung beenden
+          }
+        });
       });
-    }, {
-      rootMargin: '0px 0px -50px 0px' // Triggert 100px vor dem Viewport-Ende
-    });
-    cards.forEach(card => observer.observe(card));
+    
+      observer.observe(serviceContainer);
+    
   
 };
