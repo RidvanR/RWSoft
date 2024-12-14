@@ -331,12 +331,11 @@ export default {
 .service-card {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .service-card.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 @media (max-width: 1024px) { /* Tablet-Ansicht */

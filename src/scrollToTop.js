@@ -34,7 +34,7 @@ export function scrollToTop() {
         }
       });
     }, {
-      rootMargin: '0px 0px -100px 0px' // Triggert 100px vor dem Viewport-Ende
+      rootMargin: '0px 0px -50px 0px' // Triggert 100px vor dem Viewport-Ende
     });
     cards.forEach(card => observer.observe(card));
   
