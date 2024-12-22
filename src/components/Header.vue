@@ -1,50 +1,84 @@
 <template>
-  <header
-    :class="['header', { 'header-scrolled': isScrolled }]"
-    ref="header"
-  >
+  <header :class="['header', { 'header-scrolled': isScrolled }]">
     <!-- Logo und Name -->
     <div class="logo-container d-flex align-center">
       <img
-        src="../assets/vite.svg"
-        height="36"
-        width="36"
+        src="../assets/rwsoft-logo.svg"
+        height="44"
+        width="44"
         alt="Logo"
         class="me-3 logo"
       />
-      <a href="/home" class="logo-name">rwsoft™</a>
+      <router-link to="/home" class="logo-name">rwsoft™</router-link>
     </div>
 
     <!-- Desktop Navigation -->
     <nav class="desktop-nav hidden-sm-and-down">
-      <a href="/home" class="nav-link">Home</a>
-      <a href="/about" class="nav-link">About</a>
-      <a href="/contact" class="nav-link">Contact</a>
+      <router-link
+        to="/home"
+        class="nav-link"
+        :class="{ active: currentRoute === '/home' }"
+      >
+        Home
+      </router-link>
+      <router-link
+        to="/contact"
+        class="nav-link"
+        :class="{ active: currentRoute === '/contact' }"
+      >
+        Kontakt
+      </router-link>
+      <router-link
+        to="/contact"
+        class="nav-link"
+        :class="{ active: currentRoute === '/contact' }"
+      >
+        Contact
+      </router-link>
     </nav>
 
-    <!-- Hamburger-Menü für Mobile -->
+    <!-- Mobile Navigation Drawer -->
     <div class="hamburger hidden-md-and-up" @click="drawer = !drawer">
       <v-app-bar-nav-icon />
     </div>
-
-    <!-- Navigation Drawer -->
     <v-navigation-drawer v-model="drawer" app right temporary>
       <v-list>
-        <v-list-item link to="/home">
-          <v-list-item-title>Home</v-list-item-title>
+        <v-list-item>
+          <router-link
+            to="/home"
+            class="nav-link"
+            :class="{ active: currentRoute === '/home' }"
+          >
+            Home
+          </router-link>
         </v-list-item>
-        <v-list-item link to="/about">
-          <v-list-item-title>About</v-list-item-title>
+        <v-list-item>
+          <router-link
+            to="/contact"
+            class="nav-link"
+            :class="{ active: currentRoute === '/about' }"
+          >
+            Kontakt
+          </router-link>
         </v-list-item>
-        <v-list-item link to="/contact">
-          <v-list-item-title>Contact</v-list-item-title>
+        <v-list-item>
+          <router-link
+            to="/contact"
+            class="nav-link"
+            :class="{ active: currentRoute === '/contact' }"
+          >
+            Contact
+          </router-link>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </header>
 </template>
 
+
 <script>
+import { useRoute } from "vue-router";
+
 export default {
   data() {
     return {
@@ -52,10 +86,15 @@ export default {
       isScrolled: false,
     };
   },
+  computed: {
+    currentRoute() {
+      return this.$route.path; // Aktuelle Route aus Vue Router
+    },
+  },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
@@ -65,6 +104,7 @@ export default {
     },
   },
 };
+
 </script>
 
 <style scoped>
@@ -94,6 +134,7 @@ export default {
 .logo-container {
   display: flex;
   align-items: center;
+
 }
 
 .logo:hover {
@@ -120,7 +161,9 @@ export default {
 }
 
 .logo-name:hover {
-  color: #8fe351;
+  background: -webkit-linear-gradient(90deg, rgba(83,189,255,1) 0%, rgba(185,57,254,1) 87%, rgba(148,119,253,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: color 0.9s ease;
 }
 
@@ -138,7 +181,20 @@ export default {
 }
 
 .nav-link:hover {
-  color: #8fe351;
+  color: rgb(var(--v-theme-primary));
+}
+
+.nav-link.active {
+  color: rgb(var(--v-theme-primary));
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.v-list-item-title.active {
+  font-weight: bold;
+  color: rgb(var(--v-theme-primary))
 }
 
 /* Hamburger-Menü Styling */

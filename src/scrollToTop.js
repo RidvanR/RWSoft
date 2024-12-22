@@ -16,7 +16,6 @@ import smoothscroll from 'smoothscroll-polyfill';
   
     // Scroll-Event
     window.addEventListener('scroll', () => {
-      console.log('Scroll Y:', window.scrollY);
   
       if (window.scrollY > 200) {
         scrollToTopButton.classList.add('show');

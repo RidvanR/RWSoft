@@ -62,6 +62,59 @@
       </button>
 </div>
 </section>
+<!--
+---------------------Über Uns 
+ -->
+ <v-container class="about-section" fluid>
+    <!-- Titel -->
+    <v-row justify="center" class="mb-8">
+      <v-col cols="12" md="8" class="text-center">
+        <h2 class="section-title">Über uns</h2>
+        <p class="about-text">
+          Ende 2023 gründete <b>Ridvan Rulani</b> die Rulani Web Solutions als Kleingewerbe mit dem Ziel, kleinen und mittelständischen Unternehmen 
+          in der Region dabei zu helfen, sich den heutigen webbasierten Herausforderungen erfolgreich anzupassen und zu wachsen. 
+          Unser Fokus liegt darauf, den Einstieg in die digitale Welt <span class="comp-name">einfach</span>, <span class="comp-name">transparent</span> und <span class="comp-name">kosteneffizient</span> zu gestalten.
+          <br>
+          <br>
+          Im Jahr 2024 entschieden sich <b>Kevin Wroblewski</b> und <b>Ridvan Rulani</b>, ihre individuellen Stärken und Visionen zu vereinen, 
+          um gemeinsam <span class="comp-name">rwsoft</span> zu gründen. Mit einem klaren Ziel vor Augen: Unternehmen in die digitale Zukunft zu begleiten und dabei Innovation, Qualität und Effizienz in den Mittelpunkt zu stellen.
+          <br>
+          <br>
+          <span class="comp-name">rwsoft</span> steht für <span class="comp-name">modernste Technologien</span>, kreatives Denken und maßgeschneiderte Lösungen. Durch die Kombination aus Kevins Expertise im Bereich strategische Beratung und Vertrieb 
+          und Ridvans umfangreichem Wissen in Webentwicklung und Design, schaffen wir digitale Produkte, die nicht nur funktionieren, sondern begeistern.
+          <br>
+          <br>
+          Wir sind mehr als nur eine Software-Agentur – wir sind Ihr Partner für die <span class="comp-name">digitale Transformation</span>. Egal ob es darum geht, Ihre Online-Präsenz zu stärken, Prozesse zu optimieren oder neue Ideen in die Tat umzusetzen – rwsoft bringt Ihre Vision ins digitale Zeitalter.
+        </p>
+      </v-col>
+    </v-row>
+
+    <!-- Bilder -->
+    <v-row justify="center" class="about-images">
+      <v-col cols="12" sm="6" md="4" class="d-flex flex-column align-center">
+        <img
+          src="../assets/background.jpg"
+          alt="Ridvan Rulani"
+          class="about-image"
+        ></img>
+        <div class="person-info">
+          <h3 class="person-name">Ridvan Rulani</h3>
+          <p class="person-position">Gründer & Entwickler</p>
+        </div>
+      </v-col>
+      <v-col cols="12" sm="6" md="4" class="d-flex flex-column align-center">
+        <img
+          src="../assets/background.jpg"
+          alt="Kevin Wroblewski"
+          class="about-image"
+        ></img>
+        <div class="person-info">
+          <h3 class="person-name">Kevin Wroblewski</h3>
+          <p class="person-position">Sales-Consultant</p>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
 
 <!--
 -----------Preise
@@ -74,7 +127,7 @@
   <div class="highlight-box">
   <p>
     <i class="fas fa-exclamation-circle"></i>
-    <strong>Hinweis:</strong> Da wir als Kleinunternehmen eine begrenzte Anzahl an Projekten umsetzen können, empfehlen wir Ihnen, frühzeitig Kontakt aufzunehmen, um sich Ihren Platz zu sichern.
+    <strong>Hinweis:</strong> Um unsere hohe Qualität und individuelle Betreuung für jedes Projekt zu gewährleisten, können wir nur eine begrenzte Anzahl an Projekten gleichzeitig umsetzen. Wir empfehlen Ihnen daher, frühzeitig Kontakt aufzunehmen, um sich Ihren Platz zu sichern.
   </p>
 </div>
 
@@ -135,59 +188,7 @@
   </div>
 </section>
 
-<!--
----------------------Über Uns 
- -->
-<v-container class="about-section" fluid>
-    <!-- Titel -->
-    <v-row justify="center" class="mb-8">
-      <v-col cols="12" md="8" class="text-center">
-        <h2 class="section-title">Über uns</h2>
-        <p class="about-text">
-          Ende 2023 gründete <b>Ridvan Rulani</b> die Rulani Web Solutions als Kleingewerbe mit dem Ziel, kleinen und mittelständischen Unternehmen 
-          in der Region dabei zu helfen, sich den heutigen webbasierten Herausforderungen erfolgreich anzupassen und zu wachsen. 
-          Unser Fokus liegt darauf, den Einstieg in die digitale Welt <span class="comp-name">einfach</span>, <span class="comp-name">transparent</span> und <span class="comp-name">kosteneffizient</span> zu gestalten.
-          <br>
-          <br>
-          Im Jahr 2024 entschieden sich <b>Kevin Wroblewski</b> und <b>Ridvan Rulani</b>, ihre individuellen Stärken und Visionen zu vereinen, 
-          um gemeinsam <span class="comp-name">rwsoft</span> zu gründen. Mit einem klaren Ziel vor Augen: Unternehmen in die digitale Zukunft zu begleiten und dabei Innovation, Qualität und Effizienz in den Mittelpunkt zu stellen.
-          <br>
-          <br>
-          <span class="comp-name">rwsoft</span> steht für <span class="comp-name">modernste Technologien</span>, kreatives Denken und maßgeschneiderte Lösungen. Durch die Kombination aus Kevins Expertise im Bereich strategische Beratung und Vertrieb 
-          und Ridvans umfangreichem Wissen in Webentwicklung und Design, schaffen wir digitale Produkte, die nicht nur funktionieren, sondern begeistern.
-          <br>
-          <br>
-          Wir sind mehr als nur eine Software-Agentur – wir sind Ihr Partner für die <span class="comp-name">digitale Transformation</span>. Egal ob es darum geht, Ihre Online-Präsenz zu stärken, Prozesse zu optimieren oder neue Ideen in die Tat umzusetzen – rwsoft bringt Ihre Vision ins digitale Zeitalter.
-        </p>
-      </v-col>
-    </v-row>
 
-    <!-- Bilder -->
-    <v-row justify="center" class="about-images">
-      <v-col cols="12" sm="6" md="4" class="d-flex flex-column align-center">
-        <img
-          src="../assets/background.jpg"
-          alt="Ridvan Rulani"
-          class="about-image"
-        ></img>
-        <div class="person-info">
-          <h3 class="person-name">Ridvan Rulani</h3>
-          <p class="person-position">Gründer & Entwickler</p>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="6" md="4" class="d-flex flex-column align-center">
-        <img
-          src="../assets/background.jpg"
-          alt="Kevin Wroblewski"
-          class="about-image"
-        ></img>
-        <div class="person-info">
-          <h3 class="person-name">Kevin Wroblewski</h3>
-          <p class="person-position">Sales-Consultant</p>
-        </div>
-      </v-col>
-    </v-row>
-  </v-container>
 <!-- 
   Portfolio
 

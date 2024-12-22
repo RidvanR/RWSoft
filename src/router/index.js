@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/Home.vue'; // Stelle sicher, dass der Pfad korrekt ist
+
+// Importiere die Komponenten
+import Home from '../components/Home.vue'; // Passe den Pfad an
+import Contact from '../components/Kontakt.vue'; // Kontaktseite
+import ThankYou from '../components/Thank-You.vue'; // Danke-Seite
 
 const routes = [
   {
@@ -9,6 +13,14 @@ const routes = [
   {
     path: '/home',
     component: Home, // Rendert die Home-Komponente
+  },
+  {
+    path: '/contact',
+    component: Contact, // Rendert die Kontaktseite
+  },
+  {
+    path: '/thank-you',
+    component: ThankYou, // Rendert die Danke-Seite nach erfolgreicher Formularabsendung
   },
 ];
 

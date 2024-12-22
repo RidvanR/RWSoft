@@ -3,7 +3,7 @@
       <!-- Logo und Name -->
       <div class="footer-logo-container">
         <img
-          src="../assets/vite.svg"
+          src="../assets/rwsoft-logo.svg"
           height="36"
           width="36"
           alt="Logo"
