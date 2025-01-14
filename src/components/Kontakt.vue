@@ -1,9 +1,24 @@
 <template>
     <section class="contact-section">
       <!-- Header -->
-      <Header />
+      <Header></Header>
+
+       <!-- Hero -->
+      <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span>Kontakt</span></h1>
+      <p class="hero-subtitle">
+        Interesse geweckt? Hier können Sie uns ganz einfach kontaktieren.
+      </p>
+      <button @click="scrollToServices" class="theme-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
+          Mehr erfahren
+      </button>
+    </div>
+  </section>
         
-      <section class="contact-info">
+
+  <div class="contact-wrapper">
+    <section class="contact-info" id="contact-info">
     <h2 class="section-title">Kontaktieren Sie uns direkt</h2>
     <p class="contact-description">
       Wir sind für Sie da! Rufen Sie uns an oder schreiben Sie uns eine E-Mail. Wir freuen uns, von Ihnen zu hören.
@@ -27,7 +42,7 @@
   </section>
       <!-- Kontaktformular -->
       <div class="form-container">
-        <h1 class="section-title">Kontaktieren Sie uns</h1>
+        <h1 class="section-title">Kontaktformular</h1>
         <p class="contact-description">
           Haben Sie Fragen oder möchten eines unserer Pakete buchen? Füllen Sie das untenstehende Formular aus, und wir melden uns schnellstmöglich bei Ihnen.
         </p>
@@ -99,9 +114,11 @@
           <button type="submit" class="submit-button">Absenden</button>
         </form>
       </div>
+  </div>
+      
   
       <!-- Footer -->
-      <Footer />
+      <Footer></Footer>
     </section>
   </template>
   
@@ -114,11 +131,78 @@
       Header,
       Footer,
     },
+    methods: {
+      scrollToServices() {
+      const servicesSection = document.getElementById("contact-info");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    },
   };
   </script>
   
   <style scoped>
   /* Kontaktseite */
+
+  /* Hero Section */
+
+
+.hero {
+  height: 100vh; /* Vollbild */
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  z-index: 1;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.671); /* Halbtransparenter Overlay */
+  z-index: 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #1E293B;
+}
+
+
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px #1E293B;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse; /* Elemente umbrechen bei kleinen Bildschirmen */
+  gap: 90px; /* Abstand zwischen den Sektionen */
+  justify-content: center; /* Zentriert bei kleineren Bildschirmen */
+  align-items: start;
+  margin: 40px auto; /* Zentrieren des gesamten Layouts */
+  padding: 20px;
+  width: 100%;
+}
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -129,10 +213,8 @@
   }
   
   .form-container {
+    flex-wrap: wrap;
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 100px;
     padding: 40px;
     border-radius: 10px;
     background: rgb(var(--v-theme-cards));
@@ -175,8 +257,8 @@
   .form-group textarea {
     padding: 10px 15px;
     font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid rgb(var(--v-theme-primary));
+    border-radius: 20px;
     outline: none;
     width: 100%;
   }
@@ -264,7 +346,6 @@
   text-align: center;
   border-radius: 10px;
   max-width: 800px;
-  margin: 40px auto; /* Zentriere die Section */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -282,7 +363,7 @@
 
 .info-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap; /* Responsiv: Elemente umbrechen */
 }
@@ -292,8 +373,9 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  flex: 1 1 300px; /* Responsiv: Mindestbreite 300px */
+  min-height: 100px; /* Responsiv: Mindestbreite 300px */
   max-width: 400px;
+  min-width: 100px;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

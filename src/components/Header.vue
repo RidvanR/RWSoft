@@ -29,11 +29,11 @@
         Kontakt
       </router-link>
       <router-link
-        to="/contact"
+        to="/impressum"
         class="nav-link"
-        :class="{ active: currentRoute === '/contact' }"
+        :class="{ active: currentRoute === '/impressum' }"
       >
-        Contact
+        Impressum
       </router-link>
     </nav>
 
@@ -56,18 +56,18 @@
           <router-link
             to="/contact"
             class="nav-link"
-            :class="{ active: currentRoute === '/about' }"
+            :class="{ active: currentRoute === '/contact' }"
           >
             Kontakt
           </router-link>
         </v-list-item>
         <v-list-item>
           <router-link
-            to="/contact"
+            to="/impressum"
             class="nav-link"
-            :class="{ active: currentRoute === '/contact' }"
+            :class="{ active: currentRoute === '/impressum' }"
           >
-            Contact
+            Impressum
           </router-link>
         </v-list-item>
       </v-list>

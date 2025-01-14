@@ -6,3 +6,29 @@
     font-family: var(--font-family-primary);
     scroll-behavior: smooth;
   }
+
+  .comp-name {
+    color: rgb(var(--v-theme-primary));
+  }
+
+  .theme-button {
+    background-color: rgb(var(--v-theme-accent));
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .theme-button:hover {
+    background: rgb(var(--v-theme-hover)); /* Umkehrung des Farbverlaufs */
+    transform: scale(1.05); /* Leichte Vergrößerung */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Tieferer Schatten */
+  }
+  
+  .theme-button:active {
+    transform: scale(0.98); /* Leichter Klick-Effekt */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }

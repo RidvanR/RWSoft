@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue'; // Passe den Pfad an
 import Contact from '../components/Kontakt.vue'; // Kontaktseite
 import ThankYou from '../components/Thank-You.vue'; // Danke-Seite
+import Impressum from '../components/Impressum.vue'; 
 
 const routes = [
   {
@@ -21,6 +22,10 @@ const routes = [
   {
     path: '/thank-you',
     component: ThankYou, // Rendert die Danke-Seite nach erfolgreicher Formularabsendung
+  },
+  {
+    path: '/impressum',
+    component: Impressum, // Rendert die Danke-Seite nach erfolgreicher Formularabsendung
   },
 ];
 

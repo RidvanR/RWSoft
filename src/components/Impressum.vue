@@ -7,7 +7,7 @@
     <!-- Hauptinhalt -->
     <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Willkommen bei <span class="comp-name">rwsoft™</span></h1>
+      <h1 class="hero-title">Willkommen bei <span>rwsoft™</span></h1>
       <p class="hero-subtitle">
         Wir entwickeln moderne, kreative und skalierbare Weblösungen, die Ihre Vision in die digitale Realität bringen.
       </p>
@@ -306,6 +306,8 @@ export default {
 }
 
 /* Hero Section */
+
+
 .hero {
   height: 100vh; /* Vollbild */
   background-image: url('../assets/background.jpg');
