@@ -7,13 +7,13 @@
     <!-- Hauptinhalt -->
     <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">Willkommen bei <span class="comp-name">rwsoft™</span></h1>
+      <h1 class="hero-title">Digitale Präsenz. <br>Strategisches Marketing. <br> Maximale Reichweite.</h1>
       <p class="hero-subtitle">
-        Wir entwickeln moderne, kreative und skalierbare Weblösungen, die Ihre Vision in die digitale Realität bringen.
+        <span class="comp-name">Auf zu rwsoft!</span>
       </p>
       
       <button @click="scrollToServices" class="theme-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
-          Mehr erfahren
+        <i class="fa-solid fa-arrow-down"></i> Mehr erfahren
       </button>
       
     </div>
@@ -258,7 +258,9 @@ export default {
 <style scoped>
 /* Themes */
 .comp-name {
-  color: rgb(var(--v-theme-primary));
+  color: #fff;
+  background:rgb(var(--v-theme-primary));
+  font-weight: bold;
 }
 /* Hero Section */
 .scroll-to-top {
@@ -308,7 +310,8 @@ export default {
 /* Hero Section */
 .hero {
   height: 100vh; /* Vollbild */
-  background-image: url('../assets/background.jpg');
+  /*background-image: url('../assets/background.jpg');*/
+  background-color: #1E293B;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -341,10 +344,20 @@ export default {
   text-shadow: 1px 1px 2px #1E293B;
 }
 
+@media (max-width: 512px) { /* Tablet-Ansicht */
+  .hero-title {
+  font-size: 2.5rem;
+}
+.hero-subtitle {
+  font-size: 2rem;
+}
+
+}
+
 
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 3rem;
   margin-top: 20px;
   margin-bottom: 25px;
   text-shadow: 1px 1px 2px #1E293B;
