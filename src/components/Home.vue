@@ -7,9 +7,10 @@
     <!-- Hauptinhalt -->
     <section class="hero">
     <div class="hero-content">
+      <p>rwSoft</p>
       <h1 class="hero-title">Digitale Präsenz. <br>Strategisches Marketing. <br> Maximale Reichweite.</h1>
       <p class="hero-subtitle">
-        <span class="comp-name">Auf zu rwsoft!</span>
+        <span class="comp-name">Ihr Erfolg, unsere Mission!</span>
       </p>
       
       <button @click="scrollToServices" class="theme-button" variant="outlined rounded-lg v-ripple flat" color="#8fe351">
@@ -102,19 +103,9 @@
     <!-- Titel -->
     <v-row justify="center" class="mb-8">
       <v-col cols="12" md="8" class="text-center">
-        <h2 class="section-title">Über uns</h2>
+        <h2 class="section-title">Das sind Wir</h2>
         <p class="about-text">
-          Ende 2023 gründete <b>Ridvan Rulani</b> die Rulani Web Solutions als Kleingewerbe mit dem Ziel, kleinen und mittelständischen Unternehmen 
-          in der Region dabei zu helfen, sich den heutigen webbasierten Herausforderungen erfolgreich anzupassen und zu wachsen. 
-          Unser Fokus liegt darauf, den Einstieg in die digitale Welt <span class="comp-name">einfach</span>, <span class="comp-name">transparent</span> und <span class="comp-name">kosteneffizient</span> zu gestalten.
-          <br>
-          <br>
-          Im Jahr 2024 entschieden sich <b>Kevin Wroblewski</b> und <b>Ridvan Rulani</b>, ihre individuellen Stärken und Visionen zu vereinen, 
-          um gemeinsam <span class="comp-name">rwsoft</span> zu gründen. Mit einem klaren Ziel vor Augen: Unternehmen in die digitale Zukunft zu begleiten und dabei Innovation, Qualität und Effizienz in den Mittelpunkt zu stellen.
-          <br>
-          <br>
-          <span class="comp-name">rwsoft</span> steht für <span class="comp-name">modernste Technologien</span>, kreatives Denken und maßgeschneiderte Lösungen. Durch die Kombination aus Kevins Expertise im Bereich strategische Beratung und Vertrieb 
-          und Ridvans umfangreichem Wissen in Webentwicklung und Design, schaffen wir digitale Produkte, die nicht nur funktionieren, sondern begeistern.
+          Deine Werbeagentur für mehr Sichtbarkeit und Reichweite.
         </p>
       </v-col>
     </v-row>
@@ -260,8 +251,7 @@ export default {
 <style scoped>
 /* Themes */
 .comp-name {
-  color: #fff;
-  background:rgb(var(--v-theme-primary));
+  color: rgb(var(--v-theme-accent));
   font-weight: bold;
 }
 /* Hero Section */
@@ -288,7 +278,7 @@ export default {
 }
 
 .theme-button {
-  background-color: rgb(var(--v-theme-accent));
+  background-color: rgb(var(--v-theme-primary));
   color: #fff;
   padding: 15px 30px;
   font-size: 1rem;
@@ -320,13 +310,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: white;
 }
 
 .hero-content {
   z-index: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
 }
 
 .hero::before {
@@ -359,7 +352,7 @@ export default {
 
 
 .hero-subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 25px;
   text-shadow: 1px 1px 2px #1E293B;
@@ -371,7 +364,8 @@ export default {
 .services {
   text-align: center;
   padding: 60px 20px;
-  background-color: var(--v-background);
+ /* background-color: var(--v-background);*/
+ background-color: #fff;
   color: var(--text);
   max-width: 1200px;
   margin: 0 auto; /* Zentriere die Sektion */
