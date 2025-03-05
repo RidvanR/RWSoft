@@ -62,6 +62,39 @@
       </button>
 </div>
 </section>
+<!--Portfolio
+
+-->
+<v-container class="portfolio" fluid>
+  <v-row class="text-center">
+    <v-col cols="12">
+      <h2 class="section-title">Unsere Projekte</h2>
+    </v-col>
+  </v-row>
+    <v-row class="project-container" justify="center" align="center" dense>
+      
+      <v-col cols="12" sm="6" md="4" lg="3">
+        <v-card class="portfolio-item" elevation="5">
+          <img src="../assets/vue.svg" alt="Projekt 1" class="portfolio-image" />
+          <v-card-title class="portfolio-title">Projekt 1</v-card-title>
+        </v-card>
+      </v-col>
+      
+      <v-col cols="12" sm="6" md="4" lg="3">
+        <v-card class="portfolio-item" elevation="5">
+          <img src="../assets/vue.svg" alt="Projekt 2" class="portfolio-image" />
+          <v-card-title class="portfolio-title">Projekt 2</v-card-title>
+        </v-card>
+      </v-col>
+      
+      <v-col cols="12" sm="6" md="4" lg="3">
+        <v-card class="portfolio-item" elevation="5">
+          <img src="../assets/vue.svg" alt="Projekt 3" class="portfolio-image" />
+          <v-card-title class="portfolio-title">Projekt 3</v-card-title>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 <!--
 ---------------------Über Uns 
  -->
@@ -186,41 +219,10 @@
 </section>
 
 
-<!-- 
-  Portfolio
+
 
   
-<v-container class="portfolio" fluid>
-  <v-row class="text-center">
-    <v-col cols="12">
-      <h2 class="section-title">Unsere Projekte</h2>
-    </v-col>
-  </v-row>
-    <v-row class="project-container" justify="center" align="center" dense>
-      
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="portfolio-item" elevation="5">
-          <img src="../assets/vue.svg" alt="Projekt 1" class="portfolio-image" />
-          <v-card-title class="portfolio-title">Projekt 1</v-card-title>
-        </v-card>
-      </v-col>
-      
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="portfolio-item" elevation="5">
-          <img src="../assets/vue.svg" alt="Projekt 2" class="portfolio-image" />
-          <v-card-title class="portfolio-title">Projekt 2</v-card-title>
-        </v-card>
-      </v-col>
-      
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="portfolio-item" elevation="5">
-          <img src="../assets/vue.svg" alt="Projekt 3" class="portfolio-image" />
-          <v-card-title class="portfolio-title">Projekt 3</v-card-title>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
-   --> 
+
 <button id="scrollToTopButton" class="scroll-to-top" @click="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
 
 <Footer></Footer>
