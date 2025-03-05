@@ -7,7 +7,7 @@
     <!-- Hauptinhalt -->
     <section class="hero">
     <div class="hero-content">
-      <p>rwSoft</p>
+      <p>Rulani & Wroblewski Software</p>
       <h1 class="hero-title">Digitale Präsenz. <br>Strategisches Marketing. <br> Maximale Reichweite.</h1>
       <p class="hero-subtitle">
         <span class="comp-name">Ihr Erfolg, unsere Mission!</span>
@@ -339,15 +339,7 @@ export default {
   text-shadow: 1px 1px 2px #1E293B;
 }
 
-@media (max-width: 512px) { /* Tablet-Ansicht */
-  .hero-title {
-  font-size: 2.5rem;
-}
-.hero-subtitle {
-  font-size: 2rem;
-}
 
-}
 
 
 
@@ -356,6 +348,20 @@ export default {
   margin-top: 20px;
   margin-bottom: 25px;
   text-shadow: 1px 1px 2px #1E293B;
+}
+
+@media (max-width: 512px) { /* Tablet-Ansicht */
+  .hero-title {
+  font-size: 2rem;
+}
+.hero-subtitle {
+  font-size: 2rem;
+}
+
+.hero-content {
+  padding: 5px;
+}
+
 }
 
 

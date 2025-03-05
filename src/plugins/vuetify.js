@@ -14,7 +14,7 @@ export default createVuetify({
       light: {
         colors: {
           primary: '#6C63FF',  // Lila bleibt als Primärfarbe
-          accent: '#00B8D9',   // Türkis als Akzentfarbe
+          accent: '#6C63FF',   // Lila-Blau Übergang
           background: '#FFFFFF', // Weißer Hintergrund
           cards: '#F0F4F8',     // Helles Grau für Kartenhintergrund
           text: '#333333',      // Dunkles Grau für Text, für bessere Lesbarkeit
